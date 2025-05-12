@@ -13,6 +13,7 @@ import VerificationManagement from "./pages/admin/VerificationManagement";
 import MessagesManagement from "./pages/admin/MessagesManagement";
 import AnalyticsPage from "./pages/admin/AnalyticsPage";
 import SettingsPage from "./pages/admin/SettingsPage";
+import TransactionsPage from "./pages/admin/TransactionsPage";
 
 const queryClient = new QueryClient();
 
@@ -33,6 +34,7 @@ const App = () => (
             <Route path="messages" element={<MessagesManagement />} />
             <Route path="analytics" element={<AnalyticsPage />} />
             <Route path="settings" element={<SettingsPage />} />
+            <Route path="transactions" element={<TransactionsPage />} />
             {/* Additional admin routes can be added here */}
           </Route>
           
