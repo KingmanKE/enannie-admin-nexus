@@ -10,6 +10,9 @@ import AdminLayout from "./components/admin/AdminLayout";
 import AdminDashboard from "./pages/admin/AdminDashboard";
 import UsersManagement from "./pages/admin/UsersManagement";
 import VerificationManagement from "./pages/admin/VerificationManagement";
+import MessagesManagement from "./pages/admin/MessagesManagement";
+import AnalyticsPage from "./pages/admin/AnalyticsPage";
+import SettingsPage from "./pages/admin/SettingsPage";
 
 const queryClient = new QueryClient();
 
@@ -27,6 +30,9 @@ const App = () => (
             <Route index element={<AdminDashboard />} />
             <Route path="users" element={<UsersManagement />} />
             <Route path="verification" element={<VerificationManagement />} />
+            <Route path="messages" element={<MessagesManagement />} />
+            <Route path="analytics" element={<AnalyticsPage />} />
+            <Route path="settings" element={<SettingsPage />} />
             {/* Additional admin routes can be added here */}
           </Route>
           
