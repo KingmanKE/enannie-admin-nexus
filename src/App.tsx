@@ -14,6 +14,7 @@ import MessagesManagement from "./pages/admin/MessagesManagement";
 import AnalyticsPage from "./pages/admin/AnalyticsPage";
 import SettingsPage from "./pages/admin/SettingsPage";
 import TransactionsPage from "./pages/admin/TransactionsPage";
+import PendingActionsPage from "./pages/admin/PendingActionsPage";
 
 const queryClient = new QueryClient();
 
@@ -35,6 +36,7 @@ const App = () => (
             <Route path="analytics" element={<AnalyticsPage />} />
             <Route path="settings" element={<SettingsPage />} />
             <Route path="transactions" element={<TransactionsPage />} />
+            <Route path="pending" element={<PendingActionsPage />} />
             {/* Additional admin routes can be added here */}
           </Route>
           
